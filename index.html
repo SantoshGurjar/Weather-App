@@ -81,10 +81,15 @@
             document.querySelector(".error").style.display = "none";
         }
     }
+    searchBox.addEventListener("keypress",()=>{
+        if(event.key == "Enter"){
+            searchBtn.click();
+        }
+    })
     searchBtn.addEventListener("click",()=>{
         checkWeather(searchBox.value);
     })
-    // checkWeather("gwalior");
+    // checkWeather("Delhi");
 </script>
 </body>
 </html>
